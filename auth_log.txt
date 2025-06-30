@@ -428,3 +428,13 @@ Jun 30 16:37:57 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell ser
 Jun 30 16:37:57 kali sshd[700]: Server listening on 0.0.0.0 port 22.
 Jun 30 16:37:57 kali sshd[700]: Server listening on :: port 22.
 Jun 30 16:37:57 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+-- Boot ab9ff3911da14b5b8f83392b31c1baf2 --
+Jun 30 18:22:02 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Jun 30 18:22:02 kali sshd[736]: Server listening on 0.0.0.0 port 22.
+Jun 30 18:22:02 kali sshd[736]: Server listening on :: port 22.
+Jun 30 18:22:02 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+-- Boot 42fd336d05404f58b8a3c18d963687e5 --
+Jun 30 19:08:02 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Jun 30 19:08:02 kali sshd[735]: Server listening on 0.0.0.0 port 22.
+Jun 30 19:08:02 kali sshd[735]: Server listening on :: port 22.
+Jun 30 19:08:02 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
