@@ -1,2 +1,26 @@
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+
+# Log and output files
+*.log
+auth_log.txt
+chart.png
+report.csv
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VS Code / JetBrains / IDE files
+.vscode/
+.idea/
+
+# Python virtual environments
+env/
+venv/
+.venv/
+
+# OS-generated files
+*.swp
