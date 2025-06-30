@@ -1,0 +1,374 @@
+Jun 28 16:09:23 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Jun 28 16:09:23 kali sshd[8797]: Server listening on 0.0.0.0 port 22.
+Jun 28 16:09:23 kali sshd[8797]: Server listening on :: port 22.
+Jun 28 16:09:23 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Jun 28 16:10:21 kali unix_chkpwd[9539]: password check failed for user (root)
+Jun 28 16:10:21 kali sshd-session[9385]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 28 16:10:21 kali sshd-session[9385]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 16:10:21 kali sshd-session[9385]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 16:10:21 kali sshd-session[9385]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 16:10:21 kali sshd-session[9385]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 16:10:23 kali sshd-session[9385]: Failed password for root from ::1 port 39446 ssh2
+Jun 28 16:10:29 kali unix_chkpwd[9604]: password check failed for user (root)
+Jun 28 16:10:29 kali sshd-session[9385]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 16:10:29 kali sshd-session[9385]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 16:10:29 kali sshd-session[9385]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 16:10:29 kali sshd-session[9385]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 16:10:31 kali sshd-session[9385]: Failed password for root from ::1 port 39446 ssh2
+Jun 28 16:10:36 kali unix_chkpwd[9653]: password check failed for user (root)
+Jun 28 16:10:36 kali sshd-session[9385]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 16:10:36 kali sshd-session[9385]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 16:10:36 kali sshd-session[9385]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 16:10:36 kali sshd-session[9385]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 16:10:38 kali sshd-session[9385]: Failed password for root from ::1 port 39446 ssh2
+Jun 28 16:10:38 kali sshd-session[9385]: Connection closed by authenticating user root ::1 port 39446 [preauth]
+Jun 28 16:10:38 kali sshd-session[9385]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 28 16:11:58 kali unix_chkpwd[10338]: password check failed for user (root)
+Jun 28 16:11:58 kali sshd-session[10304]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 28 16:11:58 kali sshd-session[10304]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 16:11:58 kali sshd-session[10304]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 16:11:58 kali sshd-session[10304]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 16:11:58 kali sshd-session[10304]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 16:12:00 kali sshd-session[10304]: Failed password for root from ::1 port 49190 ssh2
+Jun 28 16:12:04 kali unix_chkpwd[10395]: password check failed for user (root)
+Jun 28 16:12:04 kali sshd-session[10304]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 16:12:04 kali sshd-session[10304]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 16:12:04 kali sshd-session[10304]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 16:12:04 kali sshd-session[10304]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 16:12:06 kali sshd-session[10304]: Failed password for root from ::1 port 49190 ssh2
+Jun 28 16:12:10 kali unix_chkpwd[10436]: password check failed for user (root)
+Jun 28 16:12:10 kali sshd-session[10304]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 16:12:10 kali sshd-session[10304]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 16:12:10 kali sshd-session[10304]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 16:12:10 kali sshd-session[10304]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 16:12:12 kali sshd-session[10304]: Failed password for root from ::1 port 49190 ssh2
+Jun 28 16:12:12 kali sshd-session[10304]: Connection closed by authenticating user root ::1 port 49190 [preauth]
+Jun 28 16:12:12 kali sshd-session[10304]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 28 16:14:52 kali systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...
+Jun 28 16:14:52 kali sshd[8797]: Received signal 15; terminating.
+Jun 28 16:14:52 kali systemd[1]: ssh.service: Deactivated successfully.
+Jun 28 16:14:52 kali systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.
+Jun 28 16:14:52 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Jun 28 16:14:52 kali sshd[11770]: Server listening on 0.0.0.0 port 22.
+Jun 28 16:14:52 kali sshd[11770]: Server listening on :: port 22.
+Jun 28 16:14:52 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Jun 28 16:15:08 kali unix_chkpwd[11909]: password check failed for user (root)
+Jun 28 16:15:08 kali sshd-session[11875]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 28 16:15:08 kali sshd-session[11875]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 16:15:08 kali sshd-session[11875]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 16:15:08 kali sshd-session[11875]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 16:15:08 kali sshd-session[11875]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 16:15:10 kali sshd-session[11875]: Failed password for root from ::1 port 39412 ssh2
+Jun 28 16:15:16 kali sshd-session[11875]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 16:15:16 kali sshd-session[11875]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 16:15:16 kali sshd-session[11875]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 16:15:16 kali sshd-session[11875]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 16:15:18 kali sshd-session[11875]: Failed password for root from ::1 port 39412 ssh2
+Jun 28 16:16:29 kali sshd-session[11875]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 16:16:29 kali sshd-session[11875]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 16:16:29 kali sshd-session[11875]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 16:16:29 kali sshd-session[11875]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 16:16:30 kali sshd-session[11875]: Failed password for root from ::1 port 39412 ssh2
+Jun 28 16:16:32 kali sshd-session[11875]: Connection closed by authenticating user root ::1 port 39412 [preauth]
+Jun 28 16:16:32 kali sshd-session[11875]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 28 16:19:46 kali unix_chkpwd[14184]: password check failed for user (root)
+Jun 28 16:19:46 kali sshd-session[14158]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 28 16:19:46 kali sshd-session[14158]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 16:19:46 kali sshd-session[14158]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 16:19:46 kali sshd-session[14158]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 16:19:46 kali sshd-session[14158]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 16:19:48 kali sshd-session[14158]: Failed password for root from ::1 port 45174 ssh2
+Jun 28 16:19:53 kali sshd-session[14158]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 16:19:53 kali sshd-session[14158]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 16:19:53 kali sshd-session[14158]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 16:19:53 kali sshd-session[14158]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 16:19:55 kali sshd-session[14158]: Failed password for root from ::1 port 45174 ssh2
+Jun 28 16:19:57 kali unix_chkpwd[14266]: password check failed for user (root)
+Jun 28 16:19:57 kali sshd-session[14158]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 16:19:57 kali sshd-session[14158]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 16:19:57 kali sshd-session[14158]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 16:19:57 kali sshd-session[14158]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 16:19:59 kali sshd-session[14158]: Failed password for root from ::1 port 45174 ssh2
+Jun 28 16:20:00 kali sshd-session[14158]: Connection closed by authenticating user root ::1 port 45174 [preauth]
+Jun 28 16:20:00 kali sshd-session[14158]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 28 16:36:08 kali sshd-session[20934]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 28 16:36:08 kali sshd-session[20934]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 16:36:08 kali sshd-session[20934]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 16:36:08 kali sshd-session[20934]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 16:36:08 kali sshd-session[20934]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 16:36:10 kali sshd-session[20934]: Failed password for root from ::1 port 47344 ssh2
+Jun 28 16:36:13 kali sshd-session[20934]: Connection closed by authenticating user root ::1 port 47344 [preauth]
+Jun 28 16:43:53 kali unix_chkpwd[24376]: password check failed for user (root)
+Jun 28 16:43:53 kali sshd-session[24350]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 28 16:43:53 kali sshd-session[24350]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 16:43:53 kali sshd-session[24350]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 16:43:53 kali sshd-session[24350]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 16:43:53 kali sshd-session[24350]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 16:43:55 kali sshd-session[24350]: Failed password for root from ::1 port 50968 ssh2
+Jun 28 16:44:34 kali sshd-session[24350]: Connection closed by authenticating user root ::1 port 50968 [preauth]
+Jun 28 16:44:54 kali systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...
+Jun 28 16:44:54 kali sshd[11770]: Received signal 15; terminating.
+Jun 28 16:44:54 kali systemd[1]: ssh.service: Deactivated successfully.
+Jun 28 16:44:54 kali systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.
+Jun 28 16:44:54 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Jun 28 16:44:54 kali sshd[24892]: Server listening on 0.0.0.0 port 22.
+Jun 28 16:44:54 kali sshd[24892]: Server listening on :: port 22.
+Jun 28 16:44:54 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Jun 28 16:45:02 kali sshd-session[24966]: Connection from ::1 port 47234 on ::1 port 22 rdomain ""
+Jun 28 16:45:03 kali sshd-session[24966]: Failed publickey for root from ::1 port 47234 ssh2: RSA SHA256:cWDuyq9R6UyJ4EkRCGUWRBtUyF193lHAw0p50meZbDY
+Jun 28 16:45:05 kali sshd-session[24966]: Accepted password for root from ::1 port 47234 ssh2
+Jun 28 16:45:05 kali sshd-session[24966]: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+Jun 28 16:45:06 kali sshd-session[24966]: User child is on pid 25040
+-- Boot 6209d037e0034a19b4e8c501aa1e63dd --
+Jun 28 17:12:16 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Jun 28 17:12:17 kali sshd[738]: Server listening on 0.0.0.0 port 22.
+Jun 28 17:12:17 kali sshd[738]: Server listening on :: port 22.
+Jun 28 17:12:17 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Jun 28 17:40:19 kali systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...
+Jun 28 17:40:19 kali sshd[738]: Received signal 15; terminating.
+Jun 28 17:40:19 kali systemd[1]: ssh.service: Deactivated successfully.
+Jun 28 17:40:19 kali systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.
+-- Boot 893b1a7d05c0423db4306e46db835f2e --
+Jun 28 17:53:47 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Jun 28 17:53:48 kali sshd[698]: Server listening on 0.0.0.0 port 22.
+Jun 28 17:53:48 kali sshd[698]: Server listening on :: port 22.
+Jun 28 17:53:48 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Jun 28 17:55:37 kali sshd-session[1960]: Connection from 192.168.100.5 port 49240 on 192.168.100.16 port 22 rdomain ""
+Jun 28 17:55:48 kali unix_chkpwd[2042]: password check failed for user (root)
+Jun 28 17:55:48 kali sshd-session[1960]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.5  user=root
+Jun 28 17:55:48 kali sshd-session[1960]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 17:55:48 kali sshd-session[1960]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 17:55:48 kali sshd-session[1960]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 17:55:48 kali sshd-session[1960]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 17:55:50 kali sshd-session[1960]: Failed password for root from 192.168.100.5 port 49240 ssh2
+Jun 28 17:55:56 kali sshd-session[1960]: Accepted password for root from 192.168.100.5 port 49240 ssh2
+Jun 28 17:55:56 kali sshd-session[1960]: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+Jun 28 18:11:10 kali sshd-session[9046]: Connection from 192.168.100.5 port 49301 on 192.168.100.16 port 22 rdomain ""
+Jun 28 18:11:13 kali unix_chkpwd[9072]: password check failed for user (root)
+Jun 28 18:11:13 kali sshd-session[9046]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.5  user=root
+Jun 28 18:11:13 kali sshd-session[9046]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 18:11:13 kali sshd-session[9046]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 18:11:13 kali sshd-session[9046]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 18:11:13 kali sshd-session[9046]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 18:11:15 kali sshd-session[9046]: Failed password for root from 192.168.100.5 port 49301 ssh2
+Jun 28 18:11:19 kali sshd-session[9046]: Accepted password for root from 192.168.100.5 port 49301 ssh2
+Jun 28 18:11:19 kali sshd-session[9046]: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+Jun 28 18:11:20 kali sshd-session[9046]: User child is on pid 9160
+Jun 28 20:15:08 kali sshd-session[32859]: Connection from 192.168.100.5 port 49857 on 192.168.100.16 port 22 rdomain ""
+Jun 28 20:15:11 kali unix_chkpwd[32890]: password check failed for user (root)
+Jun 28 20:15:11 kali sshd-session[32859]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.5  user=root
+Jun 28 20:15:11 kali sshd-session[32859]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 20:15:11 kali sshd-session[32859]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 20:15:11 kali sshd-session[32859]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 20:15:11 kali sshd-session[32859]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 20:15:13 kali sshd-session[32859]: Failed password for root from 192.168.100.5 port 49857 ssh2
+Jun 28 20:15:16 kali sshd-session[32859]: Accepted password for root from 192.168.100.5 port 49857 ssh2
+Jun 28 20:15:16 kali sshd-session[32859]: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+Jun 28 21:11:16 kali sshd-session[59035]: Connection from ::1 port 37430 on ::1 port 22 rdomain ""
+Jun 28 21:11:28 kali unix_chkpwd[59133]: password check failed for user (root)
+Jun 28 21:11:28 kali sshd-session[59035]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 28 21:11:28 kali sshd-session[59035]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 21:11:28 kali sshd-session[59035]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 21:11:28 kali sshd-session[59035]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 21:11:28 kali sshd-session[59035]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 21:11:31 kali sshd-session[59035]: Failed password for root from ::1 port 37430 ssh2
+Jun 28 21:11:35 kali unix_chkpwd[59190]: password check failed for user (root)
+Jun 28 21:11:35 kali sshd-session[59035]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 21:11:35 kali sshd-session[59035]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 21:11:35 kali sshd-session[59035]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 21:11:35 kali sshd-session[59035]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 21:11:38 kali sshd-session[59035]: Failed password for root from ::1 port 37430 ssh2
+Jun 28 21:11:41 kali unix_chkpwd[59239]: password check failed for user (root)
+Jun 28 21:11:41 kali sshd-session[59035]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 21:11:41 kali sshd-session[59035]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 21:11:41 kali sshd-session[59035]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 21:11:41 kali sshd-session[59035]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 21:11:43 kali sshd-session[59035]: Failed password for root from ::1 port 37430 ssh2
+Jun 28 21:11:44 kali sshd-session[59035]: Connection closed by authenticating user root ::1 port 37430 [preauth]
+Jun 28 21:11:44 kali sshd-session[59035]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 28 21:11:44 kali sshd[698]: srclimit_penalise: ipv6: new ::1/128 deferred penalty of 5 seconds for penalty: failed authentication
+Jun 28 21:16:40 kali sshd-session[62011]: Connection from ::1 port 54146 on ::1 port 22 rdomain ""
+Jun 28 21:16:48 kali unix_chkpwd[62078]: password check failed for user (root)
+Jun 28 21:16:48 kali sshd-session[62011]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 28 21:16:48 kali sshd-session[62011]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 21:16:48 kali sshd-session[62011]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 21:16:48 kali sshd-session[62011]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 21:16:48 kali sshd-session[62011]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 21:16:51 kali sshd-session[62011]: Failed password for root from ::1 port 54146 ssh2
+Jun 28 21:16:53 kali sshd-session[62011]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 21:16:53 kali sshd-session[62011]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 21:16:53 kali sshd-session[62011]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 21:16:53 kali sshd-session[62011]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 21:16:55 kali sshd-session[62011]: Failed password for root from ::1 port 54146 ssh2
+Jun 28 21:16:59 kali sshd-session[62011]: Accepted password for root from ::1 port 54146 ssh2
+Jun 28 21:16:59 kali sshd-session[62011]: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+Jun 28 21:17:00 kali sshd-session[62011]: User child is on pid 62217
+Jun 28 21:18:54 kali sshd-session[63186]: Connection from ::1 port 51456 on ::1 port 22 rdomain ""
+Jun 28 21:18:54 kali sshd-session[63186]: Failed publickey for root from ::1 port 51456 ssh2: RSA SHA256:cWDuyq9R6UyJ4EkRCGUWRBtUyF193lHAw0p50meZbDY
+Jun 28 21:18:57 kali unix_chkpwd[63212]: password check failed for user (root)
+Jun 28 21:18:57 kali sshd-session[63186]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 28 21:18:57 kali sshd-session[63186]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 21:18:57 kali sshd-session[63186]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 21:18:57 kali sshd-session[63186]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 21:18:57 kali sshd-session[63186]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 21:18:59 kali sshd-session[63186]: Failed password for root from ::1 port 51456 ssh2
+Jun 28 21:19:02 kali unix_chkpwd[63253]: password check failed for user (root)
+Jun 28 21:19:02 kali sshd-session[63186]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 21:19:02 kali sshd-session[63186]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 21:19:02 kali sshd-session[63186]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 21:19:02 kali sshd-session[63186]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 21:19:04 kali sshd-session[63186]: Failed password for root from ::1 port 51456 ssh2
+Jun 28 21:19:07 kali unix_chkpwd[63294]: password check failed for user (root)
+Jun 28 21:19:07 kali sshd-session[63186]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 28 21:19:07 kali sshd-session[63186]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 28 21:19:07 kali sshd-session[63186]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 28 21:19:07 kali sshd-session[63186]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 28 21:19:10 kali sshd-session[63186]: Failed password for root from ::1 port 51456 ssh2
+Jun 28 21:19:11 kali sshd-session[63186]: Connection closed by authenticating user root ::1 port 51456 [preauth]
+Jun 28 21:19:11 kali sshd-session[63186]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 28 21:19:11 kali sshd[698]: srclimit_penalise: ipv6: new ::1/128 deferred penalty of 5 seconds for penalty: failed authentication
+-- Boot 10886b1b3be24527be4e1be29a2658d7 --
+Jun 29 10:22:20 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Jun 29 10:22:20 kali sshd[800]: Server listening on 0.0.0.0 port 22.
+Jun 29 10:22:20 kali sshd[800]: Server listening on :: port 22.
+Jun 29 10:22:20 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+-- Boot 00875fe2f6a44ad9901b5039bdead5b1 --
+Jun 29 11:59:21 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Jun 29 11:59:21 kali sshd[732]: Server listening on 0.0.0.0 port 22.
+Jun 29 11:59:21 kali sshd[732]: Server listening on :: port 22.
+Jun 29 11:59:21 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Jun 29 12:00:16 kali sshd-session[1728]: Connection from 192.168.100.5 port 57304 on 192.168.100.16 port 22 rdomain ""
+Jun 29 12:00:21 kali unix_chkpwd[1770]: password check failed for user (root)
+Jun 29 12:00:21 kali sshd-session[1728]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.5  user=root
+Jun 29 12:00:21 kali sshd-session[1728]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 29 12:00:21 kali sshd-session[1728]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 29 12:00:21 kali sshd-session[1728]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 29 12:00:21 kali sshd-session[1728]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 29 12:00:23 kali sshd-session[1728]: Failed password for root from 192.168.100.5 port 57304 ssh2
+Jun 29 12:00:27 kali sshd-session[1728]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 29 12:00:27 kali sshd-session[1728]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 29 12:00:27 kali sshd-session[1728]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 29 12:00:27 kali sshd-session[1728]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 29 12:00:29 kali sshd-session[1728]: Failed password for root from 192.168.100.5 port 57304 ssh2
+Jun 29 12:00:32 kali unix_chkpwd[1860]: password check failed for user (root)
+Jun 29 12:00:32 kali sshd-session[1728]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 29 12:00:32 kali sshd-session[1728]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 29 12:00:32 kali sshd-session[1728]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 29 12:00:32 kali sshd-session[1728]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 29 12:00:34 kali sshd-session[1728]: Failed password for root from 192.168.100.5 port 57304 ssh2
+Jun 29 12:00:35 kali sshd-session[1728]: Connection reset by authenticating user root 192.168.100.5 port 57304 [preauth]
+Jun 29 12:00:35 kali sshd-session[1728]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.5  user=root
+Jun 29 12:00:35 kali sshd[732]: srclimit_penalise: ipv4: new 192.168.100.5/32 deferred penalty of 5 seconds for penalty: failed authentication
+Jun 29 12:07:54 kali sshd-session[5750]: Connection from ::1 port 60852 on ::1 port 22 rdomain ""
+Jun 29 12:07:54 kali sshd-session[5750]: Failed publickey for root from ::1 port 60852 ssh2: RSA SHA256:cWDuyq9R6UyJ4EkRCGUWRBtUyF193lHAw0p50meZbDY
+Jun 29 12:07:56 kali unix_chkpwd[5768]: password check failed for user (root)
+Jun 29 12:07:56 kali sshd-session[5750]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 29 12:07:56 kali sshd-session[5750]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 29 12:07:56 kali sshd-session[5750]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 29 12:07:56 kali sshd-session[5750]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 29 12:07:56 kali sshd-session[5750]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 29 12:07:59 kali sshd-session[5750]: Failed password for root from ::1 port 60852 ssh2
+Jun 29 12:08:01 kali unix_chkpwd[5809]: password check failed for user (root)
+Jun 29 12:08:01 kali sshd-session[5750]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 29 12:08:01 kali sshd-session[5750]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 29 12:08:01 kali sshd-session[5750]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 29 12:08:01 kali sshd-session[5750]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 29 12:08:03 kali sshd-session[5750]: Failed password for root from ::1 port 60852 ssh2
+Jun 29 12:08:06 kali unix_chkpwd[5850]: password check failed for user (root)
+Jun 29 12:08:06 kali sshd-session[5750]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 29 12:08:06 kali sshd-session[5750]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 29 12:08:06 kali sshd-session[5750]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 29 12:08:06 kali sshd-session[5750]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 29 12:08:08 kali sshd-session[5750]: Failed password for root from ::1 port 60852 ssh2
+Jun 29 12:08:09 kali sshd-session[5750]: Connection closed by authenticating user root ::1 port 60852 [preauth]
+Jun 29 12:08:09 kali sshd-session[5750]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 29 12:08:09 kali sshd[732]: srclimit_penalise: ipv6: new ::1/128 deferred penalty of 5 seconds for penalty: failed authentication
+Jun 29 12:11:45 kali sshd-session[7744]: Connection from ::1 port 43686 on ::1 port 22 rdomain ""
+Jun 29 12:11:53 kali sshd-session[7744]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 29 12:11:53 kali sshd-session[7744]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 29 12:11:53 kali sshd-session[7744]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 29 12:11:53 kali sshd-session[7744]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 29 12:11:53 kali sshd-session[7744]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 29 12:11:55 kali sshd-session[7744]: Failed password for root from ::1 port 43686 ssh2
+Jun 29 12:11:58 kali sshd-session[7744]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 29 12:11:58 kali sshd-session[7744]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 29 12:11:58 kali sshd-session[7744]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 29 12:11:58 kali sshd-session[7744]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 29 12:12:00 kali sshd-session[7744]: Failed password for root from ::1 port 43686 ssh2
+Jun 29 12:12:03 kali sshd-session[7744]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 29 12:12:03 kali sshd-session[7744]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 29 12:12:03 kali sshd-session[7744]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 29 12:12:03 kali sshd-session[7744]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 29 12:12:05 kali sshd-session[7744]: Failed password for root from ::1 port 43686 ssh2
+Jun 29 12:12:05 kali sshd-session[7744]: Connection closed by authenticating user root ::1 port 43686 [preauth]
+Jun 29 12:12:05 kali sshd-session[7744]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 29 12:12:05 kali sshd[732]: srclimit_penalise: ipv6: new ::1/128 deferred penalty of 5 seconds for penalty: failed authentication
+-- Boot 7299f10cc10944eabe795e862fcb6b42 --
+Jun 29 16:30:56 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Jun 29 16:30:56 kali sshd[733]: Server listening on 0.0.0.0 port 22.
+Jun 29 16:30:56 kali sshd[733]: Server listening on :: port 22.
+Jun 29 16:30:56 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+-- Boot 9c2773989bba4db19468e0451aa54ffb --
+Jun 29 16:42:41 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Jun 29 16:42:41 kali sshd[736]: Server listening on 0.0.0.0 port 22.
+Jun 29 16:42:41 kali sshd[736]: Server listening on :: port 22.
+Jun 29 16:42:41 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Jun 29 16:53:41 kali sshd-session[6517]: Connection from ::1 port 46574 on ::1 port 22 rdomain ""
+Jun 29 16:53:41 kali sshd-session[6517]: Failed publickey for root from ::1 port 46574 ssh2: RSA SHA256:cWDuyq9R6UyJ4EkRCGUWRBtUyF193lHAw0p50meZbDY
+Jun 29 16:53:43 kali unix_chkpwd[6535]: password check failed for user (root)
+Jun 29 16:53:43 kali sshd-session[6517]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 29 16:53:43 kali sshd-session[6517]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 29 16:53:43 kali sshd-session[6517]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 29 16:53:44 kali sshd-session[6517]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 29 16:53:44 kali sshd-session[6517]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 29 16:53:46 kali sshd-session[6517]: Failed password for root from ::1 port 46574 ssh2
+Jun 29 16:53:48 kali unix_chkpwd[6576]: password check failed for user (root)
+Jun 29 16:53:48 kali sshd-session[6517]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 29 16:53:48 kali sshd-session[6517]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 29 16:53:48 kali sshd-session[6517]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 29 16:53:48 kali sshd-session[6517]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 29 16:53:50 kali sshd-session[6517]: Failed password for root from ::1 port 46574 ssh2
+Jun 29 16:53:53 kali sshd-session[6517]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 29 16:53:53 kali sshd-session[6517]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 29 16:53:53 kali sshd-session[6517]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 29 16:53:53 kali sshd-session[6517]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 29 16:53:55 kali sshd-session[6517]: Failed password for root from ::1 port 46574 ssh2
+Jun 29 16:53:56 kali sshd-session[6517]: Connection closed by authenticating user root ::1 port 46574 [preauth]
+Jun 29 16:53:56 kali sshd-session[6517]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 29 16:53:56 kali sshd[736]: srclimit_penalise: ipv6: new ::1/128 deferred penalty of 5 seconds for penalty: failed authentication
+Jun 29 17:06:40 kali sshd[736]: Received signal 15; terminating.
+Jun 29 17:06:40 kali systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...
+Jun 29 17:06:40 kali systemd[1]: ssh.service: Deactivated successfully.
+Jun 29 17:06:40 kali systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.
+-- Boot d8ab9d798d7541d581a9da521e50245d --
+Jun 29 17:40:19 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Jun 29 17:40:19 kali sshd[734]: Server listening on 0.0.0.0 port 22.
+Jun 29 17:40:19 kali sshd[734]: Server listening on :: port 22.
+Jun 29 17:40:19 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+-- Boot 94e1fdc1d0e84b498e715df59d75f281 --
+Jun 30 13:23:08 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Jun 30 13:23:09 kali sshd[726]: Server listening on 0.0.0.0 port 22.
+Jun 30 13:23:09 kali sshd[726]: Server listening on :: port 22.
+Jun 30 13:23:09 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Jun 30 13:41:52 kali sshd-session[8211]: Connection from ::1 port 51454 on ::1 port 22 rdomain ""
+Jun 30 13:42:00 kali unix_chkpwd[8277]: password check failed for user (root)
+Jun 30 13:42:00 kali sshd-session[8211]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=root
+Jun 30 13:42:00 kali sshd-session[8211]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 30 13:42:00 kali sshd-session[8211]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 30 13:42:00 kali sshd-session[8211]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 30 13:42:00 kali sshd-session[8211]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'root')
+Jun 30 13:42:02 kali sshd-session[8211]: Failed password for root from ::1 port 51454 ssh2
+Jun 30 13:42:12 kali sshd-session[8211]: Accepted password for root from ::1 port 51454 ssh2
+Jun 30 13:42:12 kali sshd-session[8211]: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+Jun 30 13:42:13 kali sshd-session[8211]: User child is on pid 8421
+Jun 30 13:44:50 kali sshd-session[9775]: Connection from ::1 port 48754 on ::1 port 22 rdomain ""
+Jun 30 13:44:53 kali unix_chkpwd[9809]: password check failed for user (karunya)
+Jun 30 13:44:53 kali sshd-session[9775]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=karunya
+Jun 30 13:44:53 kali sshd-session[9775]: pam_winbind(sshd:auth): getting password (0x00000388)
+Jun 30 13:44:53 kali sshd-session[9775]: pam_winbind(sshd:auth): pam_get_item returned a password
+Jun 30 13:44:53 kali sshd-session[9775]: pam_winbind(sshd:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jun 30 13:44:53 kali sshd-session[9775]: pam_winbind(sshd:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'karunya')
+Jun 30 13:44:55 kali sshd-session[9775]: Failed password for karunya from ::1 port 48754 ssh2
+Jun 30 13:44:57 kali sshd-session[9775]: Accepted password for karunya from ::1 port 48754 ssh2
+Jun 30 13:44:57 kali sshd-session[9775]: pam_unix(sshd:session): session opened for user karunya(uid=1000) by karunya(uid=0)
+Jun 30 13:44:58 kali sshd-session[9775]: User child is on pid 9848
