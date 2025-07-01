@@ -10,6 +10,7 @@ def display_results(enriched_attempts):
             location = data.get("location", "Unknown")
             records = data.get("records", [])
             print(f"[{ip}] — {location} — {len(records)} attempt(s)")
-            for timestamp, user in records:
-                print(f"   └─ {timestamp} → user: {user}")
+            for timestamp, user, is_invalid in records:
+                label = " (invalid)" if is_invalid else ""
+                print(f"   └─ {timestamp} → user: {user}{label}")
             print()
