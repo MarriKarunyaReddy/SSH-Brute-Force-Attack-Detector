@@ -1,9 +1,9 @@
 import csv
 
-def export_to_csv(enriched_attempts, filename="report.csv"):
+def export_to_csv(enriched_attempts, filename="report_detailed.csv"):
     """
-    Export enriched login attempts to a CSV file.
-    Columns: Timestamp, Username, IP Address, IsInvalidUser, Location
+    Export enriched login attempts with geolocation details to a CSV file.
+    Columns: Timestamp, Username, IP Address, IsInvalidUser, Location, Latitude, Longitude, Organization, ISP, AS, Timezone
     """
     if not enriched_attempts:
         print("📭 No data to export.")
@@ -12,23 +12,33 @@ def export_to_csv(enriched_attempts, filename="report.csv"):
     try:
         with open(filename, mode="w", newline="") as csvfile:
             writer = csv.writer(csvfile)
-            writer.writerow(["Timestamp", "Username", "IP Address", "IsInvalidUser", "Location"])
+            writer.writerow([
+                "Timestamp", "Username", "IP Address", "IsInvalidUser",
+                "Location", "Latitude", "Longitude", "Organization",
+                "ISP", "AS", "Timezone"
+            ])
 
             for ip, data in enriched_attempts.items():
                 location = data.get("location", "Unknown")
-                for record in data.get("records", []):
-                    if isinstance(record, (list, tuple)):
-                        if len(record) == 3:
-                            timestamp, username, is_invalid = record
-                        elif len(record) == 2:
-                            timestamp, username = record
-                            is_invalid = "Unknown"
-                        else:
-                            continue  
-                        writer.writerow([timestamp, username, ip, is_invalid, location])
-                    else:
-                        continue  
+                lat = data.get("lat")
+                lon = data.get("lon")
+                org = data.get("org")
+                isp = data.get("isp")
+                asn = data.get("as")
+                timezone = data.get("timezone")
 
-        print(f"📄 Exported report to {filename}")
+                for record in data.get("records", []):
+                    if len(record) == 3:
+                        timestamp, username, is_invalid = record
+                    else:
+                        timestamp, username = record
+                        is_invalid = "Unknown"
+
+                    writer.writerow([
+                        timestamp, username, ip, is_invalid,
+                        location, lat, lon, org, isp, asn, timezone
+                    ])
+
+        print(f"📄 Exported detailed report to {filename}")
     except Exception as e:
         print(f"❌ Failed to export CSV: {e}")

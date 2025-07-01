@@ -8,7 +8,7 @@ def parse_accepted_logins(file_path="auth_log.txt"):
     """
     accepted = defaultdict(list)
     # Matches both password and publickey accepted logins
-    pattern = r"^(\w+ \d+ \d+:\d+:\d+).*Accepted \w+ for (\w+) from ([\d.:a-fA-F]+)"
+    pattern = r"^(\w+ \d+ \d+:\d+:\d+).*Accepted \w+ for ([^\s]+) from ([\d.:a-fA-F]+)"
 
     try:
         with open(file_path, "r") as file:
