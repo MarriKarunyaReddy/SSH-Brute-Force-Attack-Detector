@@ -8,7 +8,7 @@ def parse_logs(file_path="auth_log.txt"):
     """
     attempts = defaultdict(list)
     # Handles both valid and invalid users
-    pattern = r"^(\w+ \d+ \d+:\d+:\d+).*Failed password for (invalid user )?(\w+) from ([\d.:a-fA-F]+)"
+    pattern = r"^(\w+ \d+ \d+:\d+:\d+).*Failed password for (invalid user )?([^\s]+) from ([\d.:a-fA-F]+)"
 
     try:
         with open(file_path, "r") as file:

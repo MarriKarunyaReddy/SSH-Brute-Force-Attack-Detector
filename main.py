@@ -5,6 +5,7 @@ from display_results import display_results
 from export_csv import export_to_csv
 from plot_chart import generate_bar_chart
 from geoip_lookup import lookup_ip_geolocation
+from accepted_logins import parse_accepted_logins
 
 if __name__ == "__main__":
     # Use command-line argument if provided
@@ -16,6 +17,16 @@ if __name__ == "__main__":
         display_results(enriched)
         export_to_csv(attempts)  # Optional: can modify to export enriched data
         generate_bar_chart(attempts)
+        accepted_logins= parse_accepted_logins()
+        if accepted_logins:
+            print("\n🟢 Accepted SSH Logins:")
+            for ip, records in accepted_logins.items():
+                print(f"[{ip}] — {len(records)} login(s)")
+                for timestamp, user in records:
+                    print(f"   └─ {timestamp} → user: {user}")
+                print()
+        else:
+            print("🔴 No accepted SSH logins found.")
         print("✅ Detection completed successfully.")
     else:
         print("❌ Could not complete detection.")

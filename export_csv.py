@@ -17,13 +17,17 @@ def export_to_csv(enriched_attempts, filename="report.csv"):
             for ip, data in enriched_attempts.items():
                 location = data.get("location", "Unknown")
                 for record in data.get("records", []):
-                    if len(record) == 3:
-                        timestamp, username, is_invalid = record
+                    if isinstance(record, (list, tuple)):
+                        if len(record) == 3:
+                            timestamp, username, is_invalid = record
+                        elif len(record) == 2:
+                            timestamp, username = record
+                            is_invalid = "Unknown"
+                        else:
+                            continue  
                         writer.writerow([timestamp, username, ip, is_invalid, location])
                     else:
-                        # Fallback for backward compatibility (2-tuple)
-                        timestamp, username = record
-                        writer.writerow([timestamp, username, ip, "Unknown", location])
+                        continue  
 
         print(f"📄 Exported report to {filename}")
     except Exception as e:
