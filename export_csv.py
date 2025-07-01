@@ -1,23 +1,29 @@
 import csv
-from datetime import datetime
 
-def export_to_csv(attempts, filename="report.csv"):
+def export_to_csv(enriched_attempts, filename="report.csv"):
     """
-    Export parsed login attempts to a CSV file.
-    Columns: Timestamp, Username, IP Address
+    Export enriched login attempts to a CSV file.
+    Columns: Timestamp, Username, IP Address, IsInvalidUser, Location
     """
-    if not attempts:
+    if not enriched_attempts:
         print("📭 No data to export.")
         return
 
     try:
         with open(filename, mode="w", newline="") as csvfile:
             writer = csv.writer(csvfile)
-            writer.writerow(["Timestamp", "Username", "IP Address"])
+            writer.writerow(["Timestamp", "Username", "IP Address", "IsInvalidUser", "Location"])
 
-            for ip, records in attempts.items():
-                for timestamp, username in records:
-                    writer.writerow([timestamp, username, ip])
+            for ip, data in enriched_attempts.items():
+                location = data.get("location", "Unknown")
+                for record in data.get("records", []):
+                    if len(record) == 3:
+                        timestamp, username, is_invalid = record
+                        writer.writerow([timestamp, username, ip, is_invalid, location])
+                    else:
+                        # Fallback for backward compatibility (2-tuple)
+                        timestamp, username = record
+                        writer.writerow([timestamp, username, ip, "Unknown", location])
 
         print(f"📄 Exported report to {filename}")
     except Exception as e:

@@ -10,7 +10,7 @@ def fetch_logs(minutes=15):
         print(f"\n📥 Fetching SSH logs from the last {minutes} minute(s)...")
         with open("auth_log.txt", "w") as f:
             subprocess.run(
-                ["sudo", "journalctl", "-u", "ssh", f"--since={minutes} minutes ago"],
+                ["sudo", "journalctl", "-u", "sshd", f"--since={minutes} minutes ago"],
                 stdout=f,
                 stderr=subprocess.DEVNULL,
                 check=True
