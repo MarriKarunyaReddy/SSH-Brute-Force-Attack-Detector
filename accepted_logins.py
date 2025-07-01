@@ -3,22 +3,26 @@ from collections import defaultdict
 
 def parse_accepted_logins(file_path="auth_log.txt"):
     """
-    Parses log file for successful SSH logins.
-    Returns a dictionary: {IP: [(timestamp, username), ...]}
+    Parses log file for successful SSH logins, extracting:
+    - timestamp
+    - username
+    - source IP
+    - method used (password/publickey)
+    - client port number
+    Returns a dictionary: {IP: [(timestamp, username, method, port), ...]}
     """
     accepted = defaultdict(list)
-    # Matches both password and publickey accepted logins
-    pattern = r"^(\w+ \d+ \d+:\d+:\d+).*Accepted \w+ for ([^\s]+) from ([\d.:a-fA-F]+)"
+    # Regex: timestamp, method, username, IP, port
+    pattern = r"^(\w+\s+\d+\s+\d+:\d+:\d+).*Accepted (\w+) for ([^\s]+) from ([\d.:a-fA-F]+) port (\d+)"
 
     try:
         with open(file_path, "r") as file:
             for line in file:
                 match = re.search(pattern, line)
                 if match:
-                    timestamp, username, ip = match.groups()
-                    accepted[ip].append((timestamp, username))
+                    timestamp, method, username, ip, port = match.groups()
+                    accepted[ip].append((timestamp, username, method, port))
     except FileNotFoundError:
         print(f"❌ Log file '{file_path}' not found.")
 
     return accepted
-

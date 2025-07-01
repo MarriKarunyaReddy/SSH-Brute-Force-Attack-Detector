@@ -1,6 +1,6 @@
 import csv
 
-def export_to_csv(enriched_attempts, filename="report_detailed.csv"):
+def export_to_csv(enriched_attempts, filename="report.csv"):
     """
     Export enriched login attempts with geolocation details to a CSV file.
     Columns: Timestamp, Username, IP Address, IsInvalidUser, Location, Latitude, Longitude, Organization, ISP, AS, Timezone

@@ -22,8 +22,8 @@ if __name__ == "__main__":
             print("\n🟢 Accepted SSH Logins:")
             for ip, records in accepted_logins.items():
                 print(f"[{ip}] — {len(records)} login(s)")
-                for timestamp, user in records:
-                    print(f"   └─ {timestamp} → user: {user}")
+                for timestamp, user, method, port in records:
+                    print(f"   └─ {timestamp} → user: {user} (method: {method}, port: {port})")
                 print()
         else:
             print("🔴 No accepted SSH logins found.")
