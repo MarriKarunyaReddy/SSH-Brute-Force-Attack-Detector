@@ -15,7 +15,7 @@ if __name__ == "__main__":
         attempts = parse_logs()
         enriched = lookup_ip_geolocation(attempts)
         display_results(enriched)
-        export_to_csv(attempts)  # Optional: can modify to export enriched data
+        export_to_csv(enriched)
         generate_bar_chart(attempts)
         accepted_logins= parse_accepted_logins()
         if accepted_logins:
