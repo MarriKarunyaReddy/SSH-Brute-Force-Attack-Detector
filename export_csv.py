@@ -34,8 +34,14 @@ def export_to_csv(enriched_attempts, filename="static/report.csv"):
                         timestamp, username = record
                         is_invalid = "Unknown"
 
+                    # Format timestamp to DD-MM-YYYY HH:MM:SS for Excel compatibility
+                    if hasattr(timestamp, 'strftime'):
+                        timestamp_str = timestamp.strftime("%d-%m-%Y %H:%M:%S")
+                    else:
+                        timestamp_str = str(timestamp)
+
                     writer.writerow([
-                        timestamp, username, ip, is_invalid,
+                        timestamp_str, username, ip, is_invalid,
                         location, lat, lon, org, isp, asn, timezone
                     ])
 
