@@ -3,7 +3,6 @@ from fetch_logs import fetch_logs
 from parse_logs import parse_logs
 from display_results import display_results
 from export_csv import export_to_csv
-from plot_chart import generate_bar_chart
 from geoip_lookup import lookup_ip_geolocation
 from accepted_logins import parse_accepted_logins
 from heatmap import generate_heatmap
@@ -17,7 +16,6 @@ if __name__ == "__main__":
         enriched = lookup_ip_geolocation(attempts)
         display_results(enriched)
         export_to_csv(enriched)
-        generate_bar_chart(attempts)
         generate_heatmap(enriched)
         accepted_logins= parse_accepted_logins()
         if accepted_logins:
