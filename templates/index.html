@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SSH Sentinel Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #eee;
+            padding: 40px;
+            text-align: center;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+        input {
+            width: 200px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+        a {
+            display: block;
+            margin: 10px;
+            color: #00d1ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>SSH Sentinel Report Generator</h1>
+
+    <form method="post">
+        <label for="minutes">Duration (in minutes):</label><br>
+        <input type="number" name="minutes" id="minutes" value="{{ minutes or 15 }}" min="1" required>
+        <br>
+        <button type="submit">Generate Report</button>
+    </form>
+
+    {% if message %}
+        <h2>{{ message }}</h2>
+        <p>
+            {% if chart %}
+                <a href="{{ url_for('static', filename=chart) }}" target="_blank">📊 View Bar Chart</a>
+            {% endif %}
+            {% if heatmap %}
+                <a href="{{ url_for('static', filename=heatmap) }}" target="_blank">🗺️ View Heat Map</a>
+            {% endif %}
+            {% if csv_report %}
+                <a href="{{ url_for('static', filename=csv_report) }}" download>📥 Download CSV Report</a>
+            {% endif %}
+        </p>
+    {% endif %}
+</body>
+</html>

@@ -2,7 +2,7 @@ import folium
 from folium.plugins import HeatMap
 import os
 
-def generate_heatmap(enriched_data, output_file="attack_heatmap.html"):
+def generate_heatmap(enriched_data, output_file="static/attack_heatmap.html"):
     heat_data = []
     m = folium.Map(location=[20, 0], zoom_start=2, tiles="CartoDB dark_matter")
 
