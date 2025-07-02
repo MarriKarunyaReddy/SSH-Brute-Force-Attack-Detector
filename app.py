@@ -34,12 +34,4 @@ def index():
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        # CLI mode
-        minutes = sys.argv[1]
-        print(f"[+] Running analysis for {minutes} minutes...")
-        subprocess.run(["python3", "main.py", minutes], check=True)
-        print("[+] Analysis complete. Check static output.")
-    else:
-        # Web mode
-        app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run(debug=True, host="0.0.0.0", port=5000)
